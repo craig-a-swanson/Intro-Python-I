@@ -11,7 +11,7 @@ import sys
 # Print out the command line arguments in sys.argv, one per line:
 for index, arg in enumerate(sys.argv):
     print(f"{index}: {arg}")
-    
+
 
 # Print out the OS platform you're using:
 print(f"My system platform is {sys.platform}")
@@ -24,10 +24,13 @@ import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
-# YOUR CODE HERE
+print(f"The current process ID is {os.getpid()}")
 
 # Print the current working directory (cwd):
-# YOUR CODE HERE
+print(f"The current working directorh is {os.getcwd()}")
 
 # Print out your machine's login name
-# YOUR CODE HERE
+print(f"The current user is {os.getlogin()}")
+
+import getpass
+print(f"Another way to get the current user: {getpass.getuser()}")
