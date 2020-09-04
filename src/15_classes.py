@@ -30,6 +30,7 @@ class Geocache(Waypoint):
         line1 = '{self.name} is at {self.lat} deg latitude and {self.lon} degress longitude.'.format(self=self)
         line2 = 'It has a difficulty of {self.difficulty} and a size of {self.size}.'.format(self=self)
         return f'{line1}\n\t{line2}'
+        # or: return f"{super().__str__()} has difficulty{self.difficulty} and size {self.size}."
 
 # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 
