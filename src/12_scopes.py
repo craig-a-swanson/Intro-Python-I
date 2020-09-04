@@ -18,7 +18,6 @@ print(x)
 
 def outer():
     y = 120
-    print(y)
 
     def inner():
         nonlocal y
