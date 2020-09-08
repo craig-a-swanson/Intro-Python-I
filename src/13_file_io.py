@@ -13,6 +13,10 @@ foo_file = open('foo.txt', 'r')
 print(foo_file.read())
 foo_file.close()
 
+# OR:
+with open('foo.txt') as f:
+    print(f.read())
+
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
